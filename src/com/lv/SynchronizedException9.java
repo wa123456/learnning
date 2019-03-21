@@ -18,6 +18,7 @@ public class SynchronizedException9 implements Runnable {
         System.out.println("finished");
     }
 
+
     @Override
     public void run() {
         if(Thread.currentThread().getName().equals("Thread-0")){
