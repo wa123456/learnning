@@ -35,3 +35,6 @@ nbdist/
 .nb-gradle/
 
 baas-cluster-manager.iml
+
+.idea/
+classes/
