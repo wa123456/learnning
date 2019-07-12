@@ -28,7 +28,7 @@ public class TestQueue {
 
                     queue.take();
                     System.out.println("从队列取走一个元素，队列剩余" + queue.size() + "个元素");
-
+                    //实际运行之后syso语句的数值确实是有误的。原因在于非阻塞案例中，synchronized同步了整个逻辑代码块，包含了syso语句，而阻塞案例中，只有阻塞容器的put()、take()方法内含锁，同步操作未能包括syso语句。
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -49,6 +49,7 @@ public class TestQueue {
                 try {
                     queue.put(1);
                     System.out.println("向队列取中插入一个元素，队列剩余空间：" + (queueSize - queue.size()));
+                    //实际运行之后syso语句的数值确实是有误的。原因在于非阻塞案例中，synchronized同步了整个逻辑代码块，包含了syso语句，而阻塞案例中，只有阻塞容器的put()、take()方法内含锁，同步操作未能包括syso语句。
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
