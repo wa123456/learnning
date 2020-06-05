@@ -10,6 +10,8 @@ public class Piped {
         PipedReader in = new PipedReader();
 // 将输出流和输入流进行连接，否则在使用时会抛出IOException
         out.connect(in);
+        //创建了printThread，它用来接受main线程的输入，
+        //任何 main线程的输入均通过PipedWriter写入，而printThread在另一端通过PipedReader将内容读出 并打印。
         Thread printThread = new Thread(new Print(in), "PrintThread");
         printThread.start();
         int receive = 0;

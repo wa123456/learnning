@@ -1,6 +1,5 @@
 package com.lv.book.connect;
 
-import com.lv.book.connect.ConnectionDriver;
 
 import java.sql.Connection;
 import java.util.LinkedList;

@@ -3,11 +3,10 @@ package com.lv;
 /**
  * 情况二：两个线程访问的是两个对象的同步方法
  * 对象锁：同步代码块
- * 结果：两个线程几乎同时输出（即不会受干扰，因为他们真正采用的锁对象不是同一个）
+ *                                                                                                                                                                                      结果：两个线程几乎同时输出（即不会受干扰，因为他们真正采用的锁对象不是同一个）
  */
 public class SynchonizedObjectCodeBlock2 implements Runnable {
-    static SynchonizedObjectCodeBlock2 instance1=new SynchonizedObjectCodeBlock2();
-    static SynchonizedObjectCodeBlock2 instance2=new SynchonizedObjectCodeBlock2();
+
 
     @Override
     public void run() {
@@ -23,6 +22,8 @@ public class SynchonizedObjectCodeBlock2 implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
+         SynchonizedObjectCodeBlock2 instance1=new SynchonizedObjectCodeBlock2();
+         SynchonizedObjectCodeBlock2 instance2=new SynchonizedObjectCodeBlock2();
         Thread t1=new Thread(instance1);
         Thread t2=new Thread(instance2);
         t1.start();

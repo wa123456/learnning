@@ -2,7 +2,7 @@ package com.lv;
 
 /**
  * 第四种情况：同时访问同步方法和非同步方法
- * 结果：两个线程几乎同时输出。原因是：synchronized只作用于指定的方法上
+ *                                                                                                                                                                                      结果：两个线程几乎同时输出。原因是：synchronized只作用于指定的方法上
  */
 public class SynchronizedYesAndNo6 implements Runnable {
     static SynchronizedYesAndNo6 instance=new SynchronizedYesAndNo6();

@@ -3,7 +3,7 @@ package com.lv;
 /**
  * 第三种情况：两个线程访问的是同一个静态方法
  * 类锁：加在static方法上
- * 结果：线程一输出3秒后输出线程二
+ *                                                                                                                                                                                      结果：线程一输出3秒后输出线程二
  */
 public class SynchronizedClassStatic4 implements Runnable{
 

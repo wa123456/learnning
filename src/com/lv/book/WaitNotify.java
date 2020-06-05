@@ -22,6 +22,9 @@ public class WaitNotify {
                 while (flag) {
                     try {
                         System.out.println(Thread.currentThread() + " flag is true. wait@ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+                        //如果这行注释掉，程序将一直处于死循环，不停的输出System.out
+                        //调用该方法的线程进入WAITING状态，只有等待另外线程的通知或被中断才会返回，需要注意
+                        //调用wait()方法后，会释放对象的锁；//
                         lock.wait();
                     } catch (InterruptedException e) {
                     }

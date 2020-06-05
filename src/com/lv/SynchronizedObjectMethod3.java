@@ -3,7 +3,7 @@ package com.lv;
 /**
  * 情况一：两个线程同时访问同一个对象
  * 对象锁：普通方法锁
- * 结果：线程一输出3秒后输出线程二
+ *                                                                                                                                                                                  结果：线程一输出3秒后输出线程二
  */
 public class SynchronizedObjectMethod3 implements Runnable {
     //创建实例对象

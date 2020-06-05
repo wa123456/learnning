@@ -2,7 +2,7 @@ package com.lv;
 
 /**
  * 第六种情况：同时访问静态synchronized和非静态synchronized方法
- * 结果：两个线程几乎同时输出。原因是：静态锁锁住的是Class对象，非静态锁锁的只是实例本身，可以看出他们不是同一个锁，所以可以同时运行
+ *                                                                                                                                                                                  结果：两个线程几乎同时输出。原因是：静态锁锁住的是Class对象，非静态锁锁的只是实例本身，可以看出他们不是同一个锁，所以可以同时运行
  */
 public class SynchronizedStaticAndNormal8 implements Runnable {
 

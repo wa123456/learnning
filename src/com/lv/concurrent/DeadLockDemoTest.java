@@ -9,8 +9,8 @@ public class DeadLockDemoTest {
 }
 
 class DeadLockDemo{
-    private static String A = "A";
-    private static String B = "B";
+    private  String A = "A";
+    private  String B = "B";
     public void deadLock() {
         Thread t1 = new Thread(new Runnable() {
             @Override

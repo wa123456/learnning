@@ -1,6 +1,5 @@
 package com.lv.book.connect;
 
-import com.lv.book.connect.ConnectionPool;
 
 import java.sql.Connection;
 import java.util.concurrent.CountDownLatch;
@@ -14,7 +13,7 @@ public class ConnectionPoolTest {
     static CountDownLatch end;
     public static void main(String[] args) throws Exception {
         // 线程数量，可以修改线程数量进行观察
-        int threadCount = 10;
+        int threadCount = 20;
         end = new CountDownLatch(threadCount);
         int count = 20;
         AtomicInteger got = new AtomicInteger();

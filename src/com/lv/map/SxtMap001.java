@@ -30,8 +30,8 @@ class SxtEntry{
         this.value = value;
     }
 
-    private Object key;
-    private Object value;
+    Object key;
+    Object value;
 
 
 

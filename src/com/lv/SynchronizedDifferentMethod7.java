@@ -2,9 +2,9 @@ package com.lv;
 
 /**
  * 第五种情况：同时访问一个类的不同的普通同步方法
- * 结果：第一个线程输出3秒后第二个线程输出
+ *                                                                                                                                                                                      结果：第一个线程输出3秒后第二个线程输出
  */
-public class SynchronizedDifferentMethod7 implements Runnable {
+public  class SynchronizedDifferentMethod7 implements Runnable {
 
     static SynchronizedDifferentMethod7 instance=new SynchronizedDifferentMethod7();
 

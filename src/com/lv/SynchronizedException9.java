@@ -3,7 +3,7 @@ package com.lv;
 /**
  * 第七种情况：方法抛出异常后，锁被释放。
  * 现象：一旦抛出异常，第二个线程会立刻进入同步方法，就意味着第一个的锁已经释放了
- * 结果：线程1执行并抛出异常后，线程2立即执行
+ *                                                                                                                                      结果：线程1执行并抛出异常后，线程2立即执行
  */
 public class SynchronizedException9 implements Runnable {
     static SynchronizedException9 instance=new SynchronizedException9();
@@ -33,13 +33,13 @@ public class SynchronizedException9 implements Runnable {
         try {
             Thread.sleep(3000);
             //抛出异常
-            throw new Exception();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        System.out.println(Thread.currentThread().getName()+"运行结束");
+        //不能被捕获， 必须是运行时异常
+        throw new RuntimeException();
+        //System.out.println(Thread.currentThread().getName()+"运行结束");
     }
 
     //对象锁：普通方法锁
