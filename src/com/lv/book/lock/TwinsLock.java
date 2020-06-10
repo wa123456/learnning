@@ -15,6 +15,7 @@ import java.util.concurrent.locks.Lock;
  * @create: 2020-06-02 10:08
  **/
 public class TwinsLock implements Lock {
+    //设置初始状态status为2，当一个线程进行获取，status减1，该
     private final Sync sync = new Sync(2);
     private static final class Sync extends AbstractQueuedSynchronizer {
         Sync(int count) {
