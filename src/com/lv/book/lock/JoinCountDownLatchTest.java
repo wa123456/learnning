@@ -26,6 +26,7 @@ public class JoinCountDownLatchTest {
         parser1.join();
         System.out.println("finish t1.join》》》》");
         parser2.join();
+        //我的理解，这句话永远最后一行执行，
         System.out.println("all parser finish");
     }
 }

@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
  **/
 public class CountDownLatchTest {
 
-    static CountDownLatch c = new CountDownLatch(1);
+    static CountDownLatch c = new CountDownLatch(0);
     public static void main(String[] args) throws InterruptedException {
         new Thread(new Runnable() {
             @Override
