@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class ArrayQueueDemo {
 
 	public static void main(String[] args) {
+
+		System.out.println("5%3 = " + 5%3);
 		//测试一把
 		//创建一个队列
 		ArrayQueue queue = new ArrayQueue(3);
