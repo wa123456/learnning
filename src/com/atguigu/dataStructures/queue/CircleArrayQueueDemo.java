@@ -3,6 +3,11 @@ package com.atguigu.dataStructures.queue;
 import java.util.Scanner;
 
 public class CircleArrayQueueDemo {
+	/**
+	 * //说明设置4,其队列的有效数据最大是3
+	 * @param args
+	 * 这个看怎么弄，是否可以优化一下；
+	 */
 
 	public static void main(String[] args) {
 

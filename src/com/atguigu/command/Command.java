@@ -1,11 +1,11 @@
 package com.atguigu.command;
 
 
-//创建命令接口
+//鍒涘缓鍛戒护鎺ュ彛
 public interface Command {
 
-	//执行动作(操作)
+	//鎵ц鍔ㄤ綔(鎿嶄綔)
 	public void execute();
-	//撤销动作(操作)
+	//鎾ら攢鍔ㄤ綔(鎿嶄綔)
 	public void undo();
 }

@@ -5,7 +5,7 @@ public class PeanutSoyaMilk extends SoyaMilk {
 	@Override
 	void addCondiments() {
 		// TODO Auto-generated method stub
-		System.out.println(" ¼ÓÈëÉÏºÃµÄ»¨Éú ");
+		System.out.println(" åŠ å…¥ä¸Šå¥½çš„èŠ±ç”Ÿ ");
 	}
 
 }

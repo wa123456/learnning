@@ -4,14 +4,12 @@ public class PureSoyaMilk extends SoyaMilk{
 
 	@Override
 	void addCondiments() {
-		// TODO Auto-generated method stub
-		//¿ÕÊµÏÖ
+		//ç©ºå®ç°
 	}
-	
+
 	@Override
 	boolean customerWantCondiments() {
-		// TODO Auto-generated method stub
 		return false;
 	}
- 
+
 }

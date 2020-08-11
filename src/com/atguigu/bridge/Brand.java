@@ -1,6 +1,6 @@
 package com.atguigu.bridge;
 
-//½Ó¿Ú
+//æ¥å£
 public interface Brand {
 	void open();
 	void close();

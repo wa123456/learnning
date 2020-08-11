@@ -3,10 +3,10 @@ package com.atguigu.command;
 public class LightReceiver {
 
 	public void on() {
-		System.out.println(" µçµÆ´ò¿ªÁË.. ");
+		System.out.println(" ç”µç¯æ‰“å¼€äº†.. ");
 	}
-	
+
 	public void off() {
-		System.out.println(" µçµÆ¹Ø±ÕÁË.. ");
+		System.out.println(" ç”µç¯å…³é—­äº†.. ");
 	}
 }

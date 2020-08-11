@@ -4,20 +4,17 @@ public class XiaoMi implements Brand {
 
 	@Override
 	public void open() {
-		// TODO Auto-generated method stub
-		System.out.println(" Ğ¡Ã×ÊÖ»ú¿ª»ú ");
+		System.out.println(" å°ç±³æ‰‹æœºå¼€æœº ");
 	}
 
 	@Override
 	public void close() {
-		// TODO Auto-generated method stub
-		System.out.println(" Ğ¡Ã×ÊÖ»ú¹Ø»ú ");
+		System.out.println(" å°ç±³æ‰‹æœºå…³æœº ");
 	}
 
 	@Override
 	public void call() {
-		// TODO Auto-generated method stub
-		System.out.println(" Ğ¡Ã×ÊÖ»ú´òµç»° ");
+		System.out.println(" å°ç±³æ‰‹æœºæ‰“ç”µè¯ ");
 	}
 
 }

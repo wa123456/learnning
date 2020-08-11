@@ -3,18 +3,17 @@ package com.atguigu.template.improve;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//ÖÆ×÷ºì¶¹¶¹½¬
-		
-		System.out.println("----ÖÆ×÷ºì¶¹¶¹½¬----");
+		//åˆ¶ä½œçº¢è±†è±†æµ†
+
+		System.out.println("----åˆ¶ä½œçº¢è±†è±†æµ†----");
 		SoyaMilk redBeanSoyaMilk = new RedBeanSoyaMilk();
 		redBeanSoyaMilk.make();
-		
-		System.out.println("----ÖÆ×÷»¨Éú¶¹½¬----");
+
+		System.out.println("----åˆ¶ä½œèŠ±ç”Ÿè±†æµ†----");
 		SoyaMilk peanutSoyaMilk = new PeanutSoyaMilk();
 		peanutSoyaMilk.make();
-		
-		System.out.println("----ÖÆ×÷´¿¶¹½¬----");
+
+		System.out.println("----åˆ¶ä½œçº¯è±†æµ†----");
 		SoyaMilk pureSoyaMilk = new PureSoyaMilk();
 		pureSoyaMilk.make();
 	}

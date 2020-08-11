@@ -73,10 +73,10 @@ public class ArrayQueueDemo {
  * @description: 初始化数组
  **/
 class ArrayQuene{
-    int [] arr;
-    int front = 0;
-    int rear = 0;
-    int maxSize = 0;
+    private int [] arr;
+    private int front = 0;
+    private int rear = 0;
+    private int maxSize = 0;
 
     public ArrayQuene(){}
 
@@ -121,7 +121,7 @@ class ArrayQuene{
     }
 
     public boolean isFull(){
-        return (rear +1) % maxSize  == front;
+        return (rear ) % maxSize  == front;
     }
 
     public boolean isEmpty(){

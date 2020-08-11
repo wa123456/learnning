@@ -3,46 +3,45 @@ package com.atguigu.command;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		//Ê¹ÓÃÃüÁîÉè¼ÆÄ£Ê½£¬Íê³ÉÍ¨¹ıÒ£¿ØÆ÷£¬¶ÔµçµÆµÄ²Ù×÷
-		
-		//´´½¨µçµÆµÄ¶ÔÏó(½ÓÊÜÕß)
+
+		//ä½¿ç”¨å‘½ä»¤è®¾è®¡æ¨¡å¼ï¼Œå®Œæˆé€šè¿‡é¥æ§å™¨ï¼Œå¯¹ç”µç¯çš„æ“ä½œ
+
+		//åˆ›å»ºç”µç¯çš„å¯¹è±¡(æ¥å—è€…)
 		LightReceiver lightReceiver = new LightReceiver();
-		
-		//´´½¨µçµÆÏà¹ØµÄ¿ª¹ØÃüÁî
+
+		//åˆ›å»ºç”µç¯ç›¸å…³çš„å¼€å…³å‘½ä»¤
 		LightOnCommand lightOnCommand = new LightOnCommand(lightReceiver);
 		LightOffCommand lightOffCommand = new LightOffCommand(lightReceiver);
-		
-		//ĞèÒªÒ»¸öÒ£¿ØÆ÷
+
+		//éœ€è¦ä¸€ä¸ªé¥æ§å™¨
 		RemoteController remoteController = new RemoteController();
-		
-		//¸øÎÒÃÇµÄÒ£¿ØÆ÷ÉèÖÃÃüÁî, ±ÈÈç no = 0 ÊÇµçµÆµÄ¿ªºÍ¹ØµÄ²Ù×÷
+
+		//ç»™æˆ‘ä»¬çš„é¥æ§å™¨è®¾ç½®å‘½ä»¤, æ¯”å¦‚ no = 0 æ˜¯ç”µç¯çš„å¼€å’Œå…³çš„æ“ä½œ
 		remoteController.setCommand(0, lightOnCommand, lightOffCommand);
-		
-		System.out.println("--------°´ÏÂµÆµÄ¿ª°´Å¥-----------");
+
+		System.out.println("--------æŒ‰ä¸‹ç¯çš„å¼€æŒ‰é’®-----------");
 		remoteController.onButtonWasPushed(0);
-		System.out.println("--------°´ÏÂµÆµÄ¹Ø°´Å¥-----------");
+		System.out.println("--------æŒ‰ä¸‹ç¯çš„å…³æŒ‰é’®-----------");
 		remoteController.offButtonWasPushed(0);
-		System.out.println("--------°´ÏÂ³·Ïú°´Å¥-----------");
+		System.out.println("--------æŒ‰ä¸‹æ’¤é”€æŒ‰é’®-----------");
 		remoteController.undoButtonWasPushed();
-		
-		
-		System.out.println("=========Ê¹ÓÃÒ£¿ØÆ÷²Ù×÷µçÊÓ»ú==========");
-		
+
+
+		System.out.println("=========ä½¿ç”¨é¥æ§å™¨æ“ä½œç”µè§†æœº==========");
+
 		TVReceiver tvReceiver = new TVReceiver();
-		
+
 		TVOffCommand tvOffCommand = new TVOffCommand(tvReceiver);
 		TVOnCommand tvOnCommand = new TVOnCommand(tvReceiver);
-		
-		//¸øÎÒÃÇµÄÒ£¿ØÆ÷ÉèÖÃÃüÁî, ±ÈÈç no = 1 ÊÇµçÊÓ»úµÄ¿ªºÍ¹ØµÄ²Ù×÷
+
+		//ç»™æˆ‘ä»¬çš„é¥æ§å™¨è®¾ç½®å‘½ä»¤, æ¯”å¦‚ no = 1 æ˜¯ç”µè§†æœºçš„å¼€å’Œå…³çš„æ“ä½œ
 		remoteController.setCommand(1, tvOnCommand, tvOffCommand);
-		
-		System.out.println("--------°´ÏÂµçÊÓ»úµÄ¿ª°´Å¥-----------");
+
+		System.out.println("--------æŒ‰ä¸‹ç”µè§†æœºçš„å¼€æŒ‰é’®-----------");
 		remoteController.onButtonWasPushed(1);
-		System.out.println("--------°´ÏÂµçÊÓ»úµÄ¹Ø°´Å¥-----------");
+		System.out.println("--------æŒ‰ä¸‹ç”µè§†æœºçš„å…³æŒ‰é’®-----------");
 		remoteController.offButtonWasPushed(1);
-		System.out.println("--------°´ÏÂ³·Ïú°´Å¥-----------");
+		System.out.println("--------æŒ‰ä¸‹æ’¤é”€æŒ‰é’®-----------");
 		remoteController.undoButtonWasPushed();
 
 	}

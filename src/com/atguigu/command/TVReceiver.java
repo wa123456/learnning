@@ -1,12 +1,12 @@
 package com.atguigu.command;
 
 public class TVReceiver {
-	
+
 	public void on() {
-		System.out.println(" µçÊÓ»ú´ò¿ªÁË.. ");
+		System.out.println(" ç”µè§†æœºæ‰“å¼€äº†.. ");
 	}
-	
+
 	public void off() {
-		System.out.println(" µçÊÓ»ú¹Ø±ÕÁË.. ");
+		System.out.println(" ç”µè§†æœºå…³é—­äº†.. ");
 	}
 }

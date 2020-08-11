@@ -1,8 +1,8 @@
 package com.atguigu.command;
 
 /**
- * Ã»ÓĞÈÎºÎÃüÁî£¬¼´¿ÕÖ´ĞĞ: ÓÃÓÚ³õÊ¼»¯Ã¿¸ö°´Å¥, µ±µ÷ÓÃ¿ÕÃüÁîÊ±£¬¶ÔÏóÊ²Ã´¶¼²»×ö
- * ÆäÊµ£¬ÕâÑùÊÇÒ»ÖÖÉè¼ÆÄ£Ê½, ¿ÉÒÔÊ¡µô¶Ô¿ÕÅĞ¶Ï
+ * æ²¡æœ‰ä»»ä½•å‘½ä»¤ï¼Œå³ç©ºæ‰§è¡Œ: ç”¨äºåˆå§‹åŒ–æ¯ä¸ªæŒ‰é’®, å½“è°ƒç”¨ç©ºå‘½ä»¤æ—¶ï¼Œå¯¹è±¡ä»€ä¹ˆéƒ½ä¸åš
+ * å…¶å®ï¼Œè¿™æ ·æ˜¯ä¸€ç§è®¾è®¡æ¨¡å¼, å¯ä»¥çœæ‰å¯¹ç©ºåˆ¤æ–­
  * @author Administrator
  *
  */
@@ -10,14 +10,12 @@ public class NoCommand implements Command {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void undo() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }

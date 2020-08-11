@@ -1,24 +1,24 @@
 package com.atguigu.bridge;
 
 public abstract class Phone {
-	
-	//组合品牌
+
+	//缁勫悎鍝佺墝
 	private Brand brand;
 
-	//构造器
+	//鏋勯�犲櫒
 	public Phone(Brand brand) {
 		super();
 		this.brand = brand;
 	}
-	
+
 	protected void open() {
 		this.brand.open();
 	}
 	protected void close() {
-		brand.close();
+		this.brand.close();
 	}
 	protected void call() {
-		brand.call();
+		this.brand.call();
 	}
-	
+
 }
