@@ -2,7 +2,7 @@ package com.atguigu.decorator;
 
 public abstract class Drink {
 
-	public String des; // ÃèÊö
+	public String des; // æè¿°
 	private float price = 0.0f;
 	public String getDes() {
 		return des;
@@ -17,8 +17,8 @@ public abstract class Drink {
 		this.price = price;
 	}
 	
-	//¼ÆËã·ÑÓÃµÄ³éÏó·½·¨
-	//×ÓÀàÀ´ÊµÏÖ
+	//è®¡ç®—è´¹ç”¨çš„æŠ½è±¡æ–¹æ³•
+	// å­ç±»æ¥å®ç°
 	public abstract float cost();
 	
 }
