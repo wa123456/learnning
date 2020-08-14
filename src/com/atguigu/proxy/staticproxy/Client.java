@@ -3,15 +3,14 @@ package com.atguigu.proxy.staticproxy;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//´´½¨Ä¿±ê¶ÔÏó(±»´úÀí¶ÔÏó)
+		//åˆ›å»ºç›®æ ‡å¯¹è±¡(è¢«ä»£ç†å¯¹è±¡)
 		TeacherDao teacherDao = new TeacherDao();
-		
-		//´´½¨´úÀí¶ÔÏó, Í¬Ê±½«±»´úÀí¶ÔÏó´«µİ¸ø´úÀí¶ÔÏó
+
+		//åˆ›å»ºä»£ç†å¯¹è±¡,åŒæ—¶å°†è¢«ä»£ç†å¯¹è±¡ä¼ é€’ç»™ä»£ç†å¯¹è±¡
 		TeacherDaoProxy teacherDaoProxy = new TeacherDaoProxy(teacherDao);
-		
-		//Í¨¹ı´úÀí¶ÔÏó£¬µ÷ÓÃµ½±»´úÀí¶ÔÏóµÄ·½·¨
-		//¼´£ºÖ´ĞĞµÄÊÇ´úÀí¶ÔÏóµÄ·½·¨£¬´úÀí¶ÔÏóÔÙÈ¥µ÷ÓÃÄ¿±ê¶ÔÏóµÄ·½·¨ 
+
+		//é€šè¿‡ä»£ç†å¯¹è±¡ï¼Œè°ƒç”¨åˆ°è¢«ä»£ç†å¯¹è±¡çš„æ–¹æ³•
+		//å³ï¼šæ‰§è¡Œçš„æ˜¯ä»£ç†å¯¹è±¡çš„æ–¹æ³•ï¼Œä»£ç†å¯¹è±¡å†å»è°ƒç”¨ç›®æ ‡å¯¹è±¡çš„æ–¹æ³•
 		teacherDaoProxy.teach();
 	}
 
