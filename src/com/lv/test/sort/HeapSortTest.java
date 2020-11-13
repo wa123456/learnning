@@ -11,7 +11,8 @@ import java.util.Arrays;
  **/
 public class HeapSortTest {
     public static void main(String[] args) {
-        int [] arr = {9,-1,7,5,70,2,50,0,3,8,6};
+        //int [] arr = {9,-1,7,5,70,2,50,0,3,8,6};
+        int [] arr = {1,2,3,4,5,6,7};
         heapSort(arr);
         System.out.println(Arrays.toString(arr));
     }
