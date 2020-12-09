@@ -69,7 +69,9 @@ public class VolatileDemo {
  */
 class MyData {
 
-    volatile int number = 0;
+    //volatile int number = 0;
+
+    int number = 0;
 
     public void addTo60() {
         this.number = 60;

@@ -21,4 +21,8 @@ public class ArrayListNotSafeDemo {
             }, String.valueOf(i)).start();
         }
     }
+    /**
+    并发修改的异常
+    java.util.ConcurrentModificationException
+     */
 }
